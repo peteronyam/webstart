@@ -37,9 +37,22 @@
 //     username = document.getElementById("user").value;
 //     console.log(username);
 // }
+// let username;
+
+// document.getElementById("submit").onclick = function(){
+//     username = document.getElementById("user").value;
+//     document.getElementById("head1").textContent = `Hello ${username}`;
+// }
+
+let age;
 let username;
 
 document.getElementById("submit").onclick = function(){
     username = document.getElementById("user").value;
+    age = document.getElementById("age").value;
+    age = Number(age);
+    age += 2;
     document.getElementById("head1").textContent = `Hello ${username}`;
+    console.log(username);
+    console.log(age);
 }
