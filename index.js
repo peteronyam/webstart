@@ -44,15 +44,26 @@
 //     document.getElementById("head1").textContent = `Hello ${username}`;
 // }
 
-let age;
-let username;
+// let age;
+// let username;
 
-document.getElementById("submit").onclick = function(){
-    username = document.getElementById("user").value;
-    age = document.getElementById("age").value;
-    age = Number(age);
-    age += 2;
-    document.getElementById("head1").textContent = `Hello ${username}`;
-    console.log(username);
-    console.log(age);
-}
+// document.getElementById("submit").onclick = function(){
+//     username = document.getElementById("user").value;
+//     age = document.getElementById("age").value;
+//     age = Number(age);
+//     age += 2;
+//     document.getElementById("head1").textContent = `Hello ${username}`;
+//     console.log(username);
+//     console.log(age);
+// }
+
+let pi = 3.14159;
+let radius;
+let circumference;
+
+radius = window.prompt(`enter the radius of the circle`);
+radius = Number(radius);
+
+circumference = 2 * pi * radius;
+let circle = Number(circumference);
+console.log(circle);
