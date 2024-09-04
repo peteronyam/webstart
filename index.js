@@ -75,23 +75,70 @@
 //     document.getElementById("myh3").textContent = circumference + "cm";
 // }
 
-const decreaseBtn = document.getElementById("decreaseBtn");
-const resetBtn = document.getElementById("resetBtn");
-const increaseBtn = document.getElementById("increaseBtn");
-const countLebel = document.getElementById("countLebel");
-let count = 0;
+// const decreaseBtn = document.getElementById("decreaseBtn");
+// const resetBtn = document.getElementById("resetBtn");
+// const increaseBtn = document.getElementById("increaseBtn");
+// const countLebel = document.getElementById("countLebel");
+// let count = 0;
 
-increaseBtn.onclick = function(){
-    count++;
-    countLebel.textContent = count;
-}
+// increaseBtn.onclick = function(){
+//     count++;
+//     countLebel.textContent = count;
+// }
 
-decreaseBtn.onclick = function(){
-    count--;
-    countLebel.textContent = count;
-}
+// decreaseBtn.onclick = function(){
+//     count--;
+//     countLebel.textContent = count;
+// }
 
-resetBtn.onclick = function(){
-    count = 0;
-    countLebel.textContent = count;
+// resetBtn.onclick = function(){
+//     count = 0;
+//     countLebel.textContent = count;
+// }
+
+// let x = 3.68;
+// let y = 2;
+// let z;
+
+// z = Math.round(x);
+// console.log(z);
+// z = Math.floor(x);
+// z = Math.ceil(x);
+// z = Math.trunc(x);
+// z = Math.pow(x,y);
+// z = Math.sqrt(x);
+// z = Math.log(x);
+// z = Math.sin(x);
+// z = Math.cos(x);
+// z = Math.tan(x);
+// z = Math.abs(x);
+// z = Math.sign(x);
+
+// let max = Math.max(x,y);
+// console.log(z)
+// console.log(max)
+
+// let c = (10, 20, 3, -50);
+// console.log(Math.min(c))
+// Random number generator
+// const min = 10;
+// const max = 1000;
+// let randomNum = Math.floor(Math.random() * (max-min)) + min;
+// console.log(randomNum);
+const myBtn = document.getElementById("myBtn");
+const myLeb1 = document.getElementById("myLeb1");
+const myLeb2 = document.getElementById("myLeb2");
+const myLeb3 = document.getElementById("myLeb3");
+const min = 1;
+const max = 10;
+let randomNum1;
+let randomNum2;
+let randomNum3;
+myBtn.onclick = () => {
+    randomNum1 = Math.floor(Math.random() * max) + min;
+    randomNum2 = Math.floor(Math.random() * max) + min;
+    randomNum3 = Math.floor(Math.random() * max) + min;
+    myLeb1.textContent = randomNum1;
+    myLeb2.textContent = randomNum2;
+    myLeb3.textContent = randomNum3;
 }
