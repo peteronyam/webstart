@@ -57,13 +57,20 @@
 //     console.log(age);
 // }
 
-let pi = 3.14159;
+const PI = 3.14159;
 let radius;
 let circumference;
 
-radius = window.prompt(`enter the radius of the circle`);
-radius = Number(radius);
+// radius = window.prompt(`enter the radius of the circle`);
+// radius = Number(radius);
 
-circumference = 2 * pi * radius;
-let circle = Number(circumference);
-console.log(circle);
+// circumference = 2 * PI * radius;
+// let circle = Number(circumference);
+// console.log(circle);
+
+document.getElementById("sum").onclick = function(){
+    radius = document.getElementById("text").value;
+    radius = Number(radius);
+    circumference = 2 * PI * radius;
+    document.getElementById("myh3").textContent = circumference + "cm";
+}
