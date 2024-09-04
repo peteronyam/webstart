@@ -57,9 +57,9 @@
 //     console.log(age);
 // }
 
-const PI = 3.14159;
-let radius;
-let circumference;
+// const PI = 3.14159;
+// let radius;
+// let circumference;
 
 // radius = window.prompt(`enter the radius of the circle`);
 // radius = Number(radius);
@@ -68,9 +68,30 @@ let circumference;
 // let circle = Number(circumference);
 // console.log(circle);
 
-document.getElementById("sum").onclick = function(){
-    radius = document.getElementById("text").value;
-    radius = Number(radius);
-    circumference = 2 * PI * radius;
-    document.getElementById("myh3").textContent = circumference + "cm";
+// document.getElementById("sum").onclick = function(){
+//     radius = document.getElementById("text").value;
+//     radius = Number(radius);
+//     circumference = 2 * PI * radius;
+//     document.getElementById("myh3").textContent = circumference + "cm";
+// }
+
+const decreaseBtn = document.getElementById("decreaseBtn");
+const resetBtn = document.getElementById("resetBtn");
+const increaseBtn = document.getElementById("increaseBtn");
+const countLebel = document.getElementById("countLebel");
+let count = 0;
+
+increaseBtn.onclick = function(){
+    count++;
+    countLebel.textContent = count;
+}
+
+decreaseBtn.onclick = function(){
+    count--;
+    countLebel.textContent = count;
+}
+
+resetBtn.onclick = function(){
+    count = 0;
+    countLebel.textContent = count;
 }
