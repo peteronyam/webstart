@@ -22,7 +22,7 @@
 } */
 
 
-body{
+/* body{
     font-family: verdana;
     text-align: center;
 }
@@ -31,7 +31,6 @@ body{
     padding: 5px 25px;
     border-radius: 30px;
     border-start-start-radius: 10px;
-    /* border-end-start-radius: 10px; */
     border-end-end-radius: 10px;
 }
 .lebels{
@@ -52,4 +51,4 @@ body{
     border: 2px solid;
     width: 100px;
     background-color: rgb(255, 174, 0);
-}
+} */

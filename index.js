@@ -125,20 +125,38 @@
 // const max = 1000;
 // let randomNum = Math.floor(Math.random() * (max-min)) + min;
 // console.log(randomNum);
-const myBtn = document.getElementById("myBtn");
-const myLeb1 = document.getElementById("myLeb1");
-const myLeb2 = document.getElementById("myLeb2");
-const myLeb3 = document.getElementById("myLeb3");
-const min = 1;
-const max = 10;
-let randomNum1;
-let randomNum2;
-let randomNum3;
-myBtn.onclick = () => {
-    randomNum1 = Math.floor(Math.random() * max) + min;
-    randomNum2 = Math.floor(Math.random() * max) + min;
-    randomNum3 = Math.floor(Math.random() * max) + min;
-    myLeb1.textContent = randomNum1;
-    myLeb2.textContent = randomNum2;
-    myLeb3.textContent = randomNum3;
+// const myBtn = document.getElementById("myBtn");
+// const myLeb1 = document.getElementById("myLeb1");
+// const myLeb2 = document.getElementById("myLeb2");
+// const myLeb3 = document.getElementById("myLeb3");
+// const min = 1;
+// const max = 10;
+// let randomNum1;
+// let randomNum2;
+// let randomNum3;
+// myBtn.onclick = () => {
+//     randomNum1 = Math.floor(Math.random() * max) + min;
+//     randomNum2 = Math.floor(Math.random() * max) + min;
+//     randomNum3 = Math.floor(Math.random() * max) + min;
+//     myLeb1.textContent = randomNum1;
+//     myLeb2.textContent = randomNum2;
+//     myLeb3.textContent = randomNum3;
+// }
+
+
+let age = 30;
+if (age >= 18){
+    console.log('you are eligible')
+}
+else{
+    console.log("skip to the next file")
+}
+let time = 14;
+let AM = ":00AM";
+let PM = ":00PM"
+let date = Date("2024-09-09");
+if(time <= 12){
+    console.log(`good mornding, the time is:${time}:00AM`)
+}else{
+    console.log(`welscome back \n${date}`);
 }
