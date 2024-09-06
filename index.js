@@ -144,19 +144,19 @@
 // }
 
 
-let age = 30;
-if (age >= 18){
-    console.log('you are eligible')
-}
-else{
-    console.log("skip to the next file")
-}
-let time = 14;
-let AM = ":00AM";
-let PM = ":00PM"
-let date = Date("2024-09-09");
-if(time <= 12){
-    console.log(`good mornding, the time is:${time}:00AM`)
-}else{
-    console.log(`welscome back \n${date}`);
-}
+// let age = 30;
+// if (age >= 18){
+//     console.log('you are eligible')
+// }
+// else{
+//     console.log("skip to the next file")
+// }
+// let time = 14;
+// let AM = ":00AM";
+// let PM = ":00PM"
+// let date = Date("2024-09-09");
+// if(time <= 12){
+//     console.log(`good mornding, the time is:${time}:00AM`)
+// }else{
+//     console.log(`welscome back \n${date}`);
+// }
