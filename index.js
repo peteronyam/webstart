@@ -160,3 +160,28 @@
 // }else{
 //     console.log(`welscome back \n${date}`);
 // }
+
+let isStudent = true;
+let age = 18;
+const yes = `Congratulations, you meet the basic requirement`;
+const no = `You are below the age required to access this page`;
+
+ if(isStudent){
+    console.log(`you arre underage`)
+    if(age <= 2){
+        console.log(`you are a student and old enogh to drive`)
+        
+    
+    }else(
+        // link = document.getElementById("text").value;
+        // console.log(link);
+      document.getElementById("yes").onclick = function(){
+        yes = document.getElementById("yes").textContent = yes;
+       }
+    )
+ }else(
+    document.getElementById("no").onclick = () => {
+        no = document.getElementById("no").textContent = no;
+    }
+    // console.log(`you have to register to become a student`)
+ )
