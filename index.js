@@ -183,28 +183,44 @@
 //     }
 //  )
 
-const character = "#";
-const count = 8;
-const rows = [];
-for (let i = 0; i < count; i = i + 1) {
-    rows.push(character.repeat(i +1));
-};
-let result = "";
- for(const row of rows){
-    result = result + "\n" + row;
- };
- console.log(result);
+// const character = "#";
+// const count = 8;
+// const rows = [];
+// for (let i = 0; i < count; i = i + 1) {
+//     rows.push(character.repeat(i +1));
+// };
+// let result = "";
+//  for(const row of rows){
+//     result = result + "\n" + row;
+//  };
+//  console.log(result);
 
- function padRow(name) {
-    return "Hello!";
-  };
-  const call = padRow();
-  console.log(call);
+//  function padRow(name) {
+//     return "Hello!";
+//   };
+//   const call = padRow();
+//   console.log(call);
 
-  function addTwoNumbers(lastName,firstName){
-    return (lastName) + (firstName);
-  };
-  let sum;
-  addTwoNumbers(5,10);
-  sum = addTwoNumbers(5,10);
-  console.log(sum)
+//   function addTwoNumbers(lastName,firstName){
+//     return (lastName) + (firstName);
+//   };
+//   let sum;
+//   addTwoNumbers(5,10);
+//   sum = addTwoNumbers(5,10);
+//   console.log(sum)
+
+const myage = document.getElementById("myage");
+const submit = document.getElementById("submit");
+const resultElement = document.getElementById("resultElement");
+let age = 0;
+
+submit.onclick = function{
+  if (age >= 18){
+  console.log("you are old enough to enter this site");
+}else if(age < 0){
+  console.log("Your age cannot be less than 0");
+}
+else{
+  console.log("you must be 18+ to enter this site");
+}
+}
