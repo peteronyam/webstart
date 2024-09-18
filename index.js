@@ -200,3 +200,11 @@ let result = "";
   };
   const call = padRow();
   console.log(call);
+
+  function addTwoNumbers(lastName,firstName){
+    return (lastName) + (firstName);
+  };
+  let sum;
+  addTwoNumbers(5,10);
+  sum = addTwoNumbers(5,10);
+  console.log(sum)
