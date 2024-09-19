@@ -262,3 +262,10 @@ mysum.onclick = function(){
     paymentResult.textContent = `you havae to select a payment method to proceed`;
   }
 }
+let isStudent = false;
+let fact = isStudent ? "You are a student": "you are NOT a student";
+console.log(fact);
+
+let purchaseAmount = 10;
+let discount = purchaseAmount >= 100 ? 10: 0;
+console.log(`your total is $${purchaseAmount - purchaseAmount * (discount/100)}`);
