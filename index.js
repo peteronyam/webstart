@@ -209,18 +209,56 @@
 //   sum = addTwoNumbers(5,10);
 //   console.log(sum)
 
-const myage = document.getElementById("myage");
-const submit = document.getElementById("submit");
-const resultElement = document.getElementById("resultElement");
-let age = 0;
+// const myage = document.getElementById("myage");
+// const submit = document.getElementById("submit");
+// const resultElement = document.getElementById("resultElement");
+// let age;
 
-submit.onclick = function{
-  if (age >= 18){
-  console.log("you are old enough to enter this site");
-}else if(age < 0){
-  console.log("Your age cannot be less than 0");
-}
-else{
-  console.log("you must be 18+ to enter this site");
-}
+// submit.onclick = function(){
+//   age = myage.value;
+//   age = Number(age);
+//   if (age >= 100){
+//     resultElement.textContent = `you are Too old enough to enter this site`;
+//   }
+//   else if(age == 0){
+//     resultElement.textContent = `Your age cannot be less than 0`;
+//   }
+//   else if(age >=18){
+//     resultElement.textContent = `You can use the full features of this site, terms and conditions apply`;
+//   }
+//   else if(age < 0){
+//     resultElement.textContent = `You can't enter. you are not a human`;
+//   }
+//   else{
+//     resultElement.textContent = `you must be 18+ to enter this site`;
+//   }
+// }
+const mycheck = document.getElementById("mycheck");
+const visaBtn = document.getElementById("visaBtn");
+const masterBtn = document.getElementById("masterBtn");
+const paypalBtn = document.getElementById("paypalBtn");
+const mysum = document.getElementById("mysum");
+const subResult = document.getElementById("subResult");
+const paymentResult = document.getElementById("paymentResult");
+
+mysum.onclick = function(){
+  if(mycheck.checked){
+    subResult.textContent = `You are subscribed`
+  }
+  else{
+    subResult.textContent = `You are Not subscribed`;
+  }
+
+  if(visaBtn.checked){
+    paymentResult.textContent = `you have selected visa as your prefered method`;
+  }
+  else if(masterBtn.checked){
+    paymentResult.textContent = `you have selected master card as your payment method.`
+  }
+  else if(paypalBtn.checked){
+    paymentResult.textContent = `you have selected paypal as your peyment method`
+  }
+  else {
+    paymentResult.textContent = `you havae to select a payment method to proceed`;
+  }
 }
