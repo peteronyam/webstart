@@ -233,39 +233,118 @@
 //     resultElement.textContent = `you must be 18+ to enter this site`;
 //   }
 // }
-const mycheck = document.getElementById("mycheck");
-const visaBtn = document.getElementById("visaBtn");
-const masterBtn = document.getElementById("masterBtn");
-const paypalBtn = document.getElementById("paypalBtn");
-const mysum = document.getElementById("mysum");
-const subResult = document.getElementById("subResult");
-const paymentResult = document.getElementById("paymentResult");
+// const mycheck = document.getElementById("mycheck");
+// const visaBtn = document.getElementById("visaBtn");
+// const masterBtn = document.getElementById("masterBtn");
+// const paypalBtn = document.getElementById("paypalBtn");
+// const mysum = document.getElementById("mysum");
+// const subResult = document.getElementById("subResult");
+// const paymentResult = document.getElementById("paymentResult");
 
-mysum.onclick = function(){
-  if(mycheck.checked){
-    subResult.textContent = `You are subscribed`
-  }
-  else{
-    subResult.textContent = `You are Not subscribed`;
-  }
+// mysum.onclick = function(){
+//   if(mycheck.checked){
+//     subResult.textContent = `You are subscribed`
+//   }
+//   else{
+//     subResult.textContent = `You are Not subscribed`;
+//   }
 
-  if(visaBtn.checked){
-    paymentResult.textContent = `you have selected visa as your prefered method`;
-  }
-  else if(masterBtn.checked){
-    paymentResult.textContent = `you have selected master card as your payment method.`
-  }
-  else if(paypalBtn.checked){
-    paymentResult.textContent = `you have selected paypal as your peyment method`
-  }
-  else {
-    paymentResult.textContent = `you havae to select a payment method to proceed`;
-  }
+//   if(visaBtn.checked){
+//     paymentResult.textContent = `you have selected visa as your prefered method`;
+//   }
+//   else if(masterBtn.checked){
+//     paymentResult.textContent = `you have selected master card as your payment method.`
+//   }
+//   else if(paypalBtn.checked){
+//     paymentResult.textContent = `you have selected paypal as your peyment method`
+//   }
+//   else {
+//     paymentResult.textContent = `you havae to select a payment method to proceed`;
+//   }
+// }
+// let isStudent = false;
+// let fact = isStudent ? "You are a student": "you are NOT a student";
+// console.log(fact);
+
+// let purchaseAmount = 10;
+// let discount = purchaseAmount >= 100 ? 10: 0;
+// console.log(`your total is $${purchaseAmount - purchaseAmount * (discount/100)}`);
+
+// let day = 4;
+
+// switch(day){
+//   case 1:
+//     console.log('today is monday')
+//     break;
+//    case 2:
+//     console.log("it is tuesday") ;
+//     break;
+//   case 3:
+//     console.log("it is wednesday");
+//     break;
+//   case 4:
+//     console.log("it is thursday");
+//     break;
+//   case 5:
+//     console.log("it is friday");
+//     break;
+//   case 6:
+//     console.log("it is saturday");
+//     break;
+//   case 7:
+//     console.log("it is sunday");
+//     break;
+//   default:
+//     console.log(`${day} is not a day`)
+// }
+
+let testScore = 90;
+let letterGrade;
+switch(true){
+  case testScore >= 80:
+    letterGrade = `You got an A.
+    You have passed the course`;
+    break;
+  case testScore >= 70:
+    letterGrade = "B";
+    break;
+  case testScore >= 60:
+    letterGrade = "C";
+    break;
+  case testScore >= 50:
+    letterGrade = "D";
+    break;
+  case testScore >= 40:
+    letterGrade = "E";
+    break;
+  case testScore <= 39:
+    letterGrade = "F";
+    break;
+  default:
+    letterGrade = `you result is not uploaded yet`;
 }
-let isStudent = false;
-let fact = isStudent ? "You are a student": "you are NOT a student";
-console.log(fact);
+console.log(letterGrade)
 
-let purchaseAmount = 10;
-let discount = purchaseAmount >= 100 ? 10: 0;
-console.log(`your total is $${purchaseAmount - purchaseAmount * (discount/100)}`);
+let userName = "Brocode";
+
+// userName.charAt(0)
+
+console.log(userName.charAt(1))
+
+console.log(userName.indexOf("o"))
+console.log(userName.lastIndexOf("o"))
+console.log(userName.length);
+console.log(userName.trim().toUpperCase())
+console.log(userName.toUpperCase())
+console.log(userName.toLowerCase().repeat(4))
+let result =userName.startsWith(" ");
+let num = userName.includes(" ");
+console.log(result)
+
+if(result){
+  console.log(`Your username is not supposed to start with a whitespace`)
+}else if(num){
+  console.log(`your username must not include a white space`);
+}else{
+  console.log(userName);
+}
