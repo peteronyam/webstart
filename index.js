@@ -325,9 +325,9 @@ switch(true){
 }
 console.log(letterGrade)
 
-let userName = "Brocode";
+let userName = "Bro code";
 
-// userName.charAt(0)
+userName.charAt(0)
 
 console.log(userName.charAt(1))
 
@@ -339,12 +339,22 @@ console.log(userName.toUpperCase())
 console.log(userName.toLowerCase().repeat(4))
 let result =userName.startsWith(" ");
 let num = userName.includes(" ");
+console.log(num)
 console.log(result)
 
 if(result){
   console.log(`Your username is not supposed to start with a whitespace`)
-}else if(num){
-  console.log(`your username must not include a white space`);
-}else{
-  console.log(userName);
 }
+else if(num){
+  console.log(`your username must not include a white space`);
+}
+else{
+  console.log(userName.trim());
+}
+
+let phoneNumber = "234-5860-964-45";
+
+phoneNumber = phoneNumber.replace("-", "");
+// phoneNumber = phoneNumber.padStart("11", "");
+// phoneNumber = phoneNumber.padEnd(5, ("0"));
+console.log(phoneNumber)
