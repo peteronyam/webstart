@@ -298,63 +298,90 @@
 //     console.log(`${day} is not a day`)
 // }
 
-let testScore = 90;
-let letterGrade;
-switch(true){
-  case testScore >= 80:
-    letterGrade = `You got an A.
-    You have passed the course`;
-    break;
-  case testScore >= 70:
-    letterGrade = "B";
-    break;
-  case testScore >= 60:
-    letterGrade = "C";
-    break;
-  case testScore >= 50:
-    letterGrade = "D";
-    break;
-  case testScore >= 40:
-    letterGrade = "E";
-    break;
-  case testScore <= 39:
-    letterGrade = "F";
-    break;
-  default:
-    letterGrade = `you result is not uploaded yet`;
-}
-console.log(letterGrade)
+// let testScore = 90;
+// let letterGrade;
+// switch(true){
+//   case testScore >= 80:
+//     letterGrade = `You got an A.
+//     You have passed the course`;
+//     break;
+//   case testScore >= 70:
+//     letterGrade = "B";
+//     break;
+//   case testScore >= 60:
+//     letterGrade = "C";
+//     break;
+//   case testScore >= 50:
+//     letterGrade = "D";
+//     break;
+//   case testScore >= 40:
+//     letterGrade = "E";
+//     break;
+//   case testScore <= 39:
+//     letterGrade = "F";
+//     break;
+//   default:
+//     letterGrade = `you result is not uploaded yet`;
+// }
+// console.log(letterGrade)
 
-let userName = "Bro code";
+// let userName = "Bro code";
 
-userName.charAt(0)
+// userName.charAt(0)
 
-console.log(userName.charAt(1))
+// console.log(userName.charAt(1))
 
-console.log(userName.indexOf("o"))
-console.log(userName.lastIndexOf("o"))
-console.log(userName.length);
-console.log(userName.trim().toUpperCase())
-console.log(userName.toUpperCase())
-console.log(userName.toLowerCase().repeat(4))
-let result =userName.startsWith(" ");
-let num = userName.includes(" ");
-console.log(num)
-console.log(result)
+// console.log(userName.indexOf("o"))
+// console.log(userName.lastIndexOf("o"))
+// console.log(userName.length);
+// console.log(userName.trim().toUpperCase())
+// console.log(userName.toUpperCase())
+// console.log(userName.toLowerCase().repeat(4))
+// let result =userName.startsWith(" ");
+// let num = userName.includes(" ");
+// console.log(num)
+// console.log(result)
 
-if(result){
-  console.log(`Your username is not supposed to start with a whitespace`)
-}
-else if(num){
-  console.log(`your username must not include a white space`);
-}
-else{
-  console.log(userName.trim());
-}
+// if(result){
+//   console.log(`Your username is not supposed to start with a whitespace`)
+// }
+// else if(num){
+//   console.log(`your username must not include a white space`);
+// }
+// else{
+//   console.log(userName.trim());
+// }
 
-let phoneNumber = "234-5860-964-45";
+// let phoneNumber = "234-5860-964-45";
 
-phoneNumber = phoneNumber.replace("-", "");
-// phoneNumber = phoneNumber.padStart("11", "");
+// phoneNumber = phoneNumber.replaceAll("-", "");
+// // phoneNumber = phoneNumber.padStart("11", "");
 // phoneNumber = phoneNumber.padEnd(5, ("0"));
-console.log(phoneNumber)
+// console.log(phoneNumber)
+
+// const fullName = "Peter Onyam";
+//  let firstName = fullName.slice(0, 5);
+//  console.log(firstName);
+//  let lastName = fullName.slice(6);
+//  console.log(lastName);
+//  let firstChar = fullName.slice(0,1);
+//  console.log(firstChar)
+//  let lastChar = fullName.slice(-1)
+//  console.log(lastChar);
+//  let first = fullName.slice(0, fullName.indexOf(" "));
+//  console.log(first)
+//  let last = fullName.slice(fullName.indexOf(" ") + 1)
+//  console.log(last)
+
+ const email = "peteronyam@gmail.com";
+ let useme = email.slice(0, email.indexOf("@"));
+ let domain = email.slice(email.indexOf("@") +1)
+ console.log(domain.toUpperCase())
+ console.log(`your username is ${useme.toUpperCase()}`)
+
+
+ let name = window.prompt(`Enter your username`);
+ 
+ name = name.trim();
+ let letter = name.charAt(0);
+ letter = letter.toUpperCase();
