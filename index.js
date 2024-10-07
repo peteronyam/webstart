@@ -380,8 +380,60 @@
  console.log(`your username is ${useme.toUpperCase()}`)
 
 
- let name = window.prompt(`Enter your username`);
- 
- name = name.trim();
- let letter = name.charAt(0);
- letter = letter.toUpperCase();
+//  let namein = window.prompt(`Enter your username`);
+
+//  namein = namein.trim();
+//  let letter = namein.charAt(0);
+//  letter = letter.toUpperCase();
+// NO METHOD CHAINING
+//  let extraChar = namein.slice(1);
+//  extraChar = extraChar.toLowerCase();
+//  namein = letter + extraChar;
+//  console.log(namein);
+
+// METHOD CHAINING
+//  namein = namein.trim().charAt(0).toUpperCase() + namein.trim().slice(1).toLowerCase();
+//  console.log(namein);
+
+//  LOGICAL OPERATORS
+
+// const temp = 2;
+// if(temp > 0 && temp <= 30){
+//   console.log(`it is ${temp} degrees and the weather is good`)
+// }else{
+//   console.log("the weather is not friendly!")
+// }
+
+// const file = window.prompt(`Enter any text`);
+
+// if(file > 10 && file <= 50){
+//   console.log(`you have eneter ${file} and it is up to the range of numbers`)
+// }
+// else if(file >= 51 || file == 60){
+//   console.log(`you have enteredthe wrong command`);
+// }
+// else if(file > 65){
+//   console.log(`try again`)
+// }
+
+
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+
+for (let i = count; i > 0; i = i - 1) {
+  rows.push(padRow(i, count))
+}
+
+let result = ""
+
+for (const row of rows) {
+  result = result + "\n" + row;
+}
+
+console.log(result);
