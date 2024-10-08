@@ -417,50 +417,78 @@
 // }
 
 
-const character = "#";
-const count = 8;
-const rows = [];
+// const character = "#";
+// const count = 8;
+// const rows = [];
 
-function padRow(rowNumber, rowCount) {
-  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
-}
-
-for (let i = 1; i <= count; i++) {
-  rows.push(padRow(i, count));
-}
-
-while (rows.length < count) {
-  rows.push(padRow(rows.length + 1, count));
-}
-
-for (let i = count; i > 0; i = i - 1) {
-  rows.push(padRow(i, count))
-}
-
-let result = ""
-
-for (const row of rows) {
-  result = result + "\n" + row;
-}
-
-console.log(result);
- console.log("the is the beginning of another line")
+// function padRow(rowNumber, rowCount) {
+//   return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+// }
 
 // for (let i = 1; i <= count; i++) {
-//   rows.unshift(padRow(i, count));
+//   rows.push(padRow(i, count));
 // }
-let inverted = true;
 
-for (let i = 1; i <= count; i++) {
-  if (inverted) {
-    rows.unshift(padRow(i, count));
+// while (rows.length < count) {
+//   rows.push(padRow(rows.length + 1, count));
+// }
+
+// for (let i = count; i > 0; i = i - 1) {
+//   rows.push(padRow(i, count))
+// }
+
+// let result = ""
+
+// for (const row of rows) {
+//   result = result + "\n" + row;
+// }
+
+// console.log(result);
+//  console.log("the is the beginning of another line")
+
+// // for (let i = 1; i <= count; i++) {
+// //   rows.unshift(padRow(i, count));
+// // }
+// let inverted = true;
+
+// for (let i = 1; i <= count; i++) {
+//   if (inverted) {
+//     rows.unshift(padRow(i, count));
+//   }
+// }
+
+// let rates = ""
+
+// for (const row of rows) {
+//   rates = rates + "\n" + row;
+// }
+
+// console.log(rates);
+
+// NEW CLEANER VERSION
+
+const characterP = "!";
+const countP = 10;
+const rowsP = [];
+let invertedP = false;
+
+
+function padRow(rowNumber, rowCount) {
+  return " ".repeat(rowCount - rowNumber) + characterP.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+for (let i = 1; i <= countP; i++) {
+  if (invertedP) {
+    rowsP.unshift(padRow(i, countP));
+  } else {
+    rowsP.push(padRow(i, countP));
   }
 }
 
-let rates = ""
+let resultP = ""
 
-for (const row of rows) {
-  rates = rates + "\n" + row;
+for (const rowP of rowsP) {
+  resultP = resultP + "\n" + rowP;
 }
 
-console.log(rates);
+console.log(resultP);
