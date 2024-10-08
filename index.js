@@ -444,3 +444,15 @@ for (const row of rows) {
 }
 
 console.log(result);
+ console.log("the is the beginning of another line")
+
+for (let i = 1; i <= count; i++) {
+  rows.unshift(padRow(i, count));
+}
+let rates = ""
+
+for (const row of rows) {
+  rates = rates + "\n" + row;
+}
+
+console.log(rates);
